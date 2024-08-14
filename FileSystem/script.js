@@ -29,8 +29,12 @@ const fs = require('fs');
 //     if(err){console.log(err)}
 //     else{console.log("folder Deleted")}
 // })
-fs.rm("./fourthCode",{recursive:true},(err)=>{
-        if(err){console.log(err)}
-        else{console.log("folder Deleted")}
-    })
+// fs.rm("./fourthCode",{recursive:true},(err)=>{
+//         if(err){console.log(err)}
+//         else{console.log("folder Deleted")}
+//     })
 
+fs.readFile("firstBackendFile.txt",(err,data)=>{
+    if(err){console.log(err)}
+    else{console.log(data.toString())}
+})
